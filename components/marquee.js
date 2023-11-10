@@ -1,4 +1,4 @@
-  import React from "react";
+  import { React, Suspense } from "react";
   import Image from "next/image";
   import workpath from "../assets/wp.png";
   import Container from "@/components/container";
@@ -19,12 +19,14 @@
           </div>
 
           <div class="w-full">
-            <Image
-              src={workpath}
-              width={680}
-              height={585}
-              alt="Workpath screenshot"
-            />
+            <Suspense fallback="Loading...">
+              <Image
+                src={workpath}
+                width={680}
+                height={585}
+                alt="Workpath screenshot"
+              />
+            </Suspense>
           </div>
 
         </div>
