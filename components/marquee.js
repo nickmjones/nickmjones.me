@@ -10,7 +10,7 @@
         <div id="intro" className="flex flex-col lg:flex-row items-center py-8 gap-6 fader">
 
           <div class="w-full">
-            <h1 className="w-full text-6xl lg:text-7xl line-clamp-2 text-rosePine-text font-bold mb-6">
+            <h1 className="w-full text-6xl lg:text-7xl text-rosePine-text font-bold mb-6">
               <span class="leading-tight">
                 I make things people like.
               </span>
