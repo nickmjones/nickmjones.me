@@ -1,11 +1,12 @@
-import Image from 'next/image'
-import Marquee from '@/components/marquee';
-import Container from '@/components/container';
+import Image from "next/image";
+import Marquee from "@/components/marquee";
+import Container from "@/components/container";
+import shapes from '../assets/shapes.svg';
 
 export const metadata = {
-  title: 'Nick M. Jones',
-  description: 'Veteran product, UX, and graphic designer based in Providence.',
-}
+  title: "Nick M. Jones",
+  description: "Veteran product, UX, and graphic designer based in Providence.",
+};
 export default function Home() {
   return (
     <main>
@@ -13,15 +14,16 @@ export default function Home() {
       <Marquee />
 
       <Container>
-        <h2 class="text-2xl font-bold text-center leading-tight text-rosePine-muted py-24">
-          I'm a veteran product, UX, and graphic designer based in Providence (by way of NYC). Twenty+ years in the pixel mines. Dad, husband, musician, cook, camera operator, and next-life coffee shop owner.
+        <h2 class="py-24 text-center text-3xl font-bold leading-normal text-rosePine-text">
+          I'm a veteran product, UX, and graphic designer based in Providence
+          (by way of NYC). Twenty+ years in the pixel mines. Dad, husband,
+          musician, cook, camera operator, and next-life coffee shop owner.
         </h2>
       </Container>
 
       <Container>
-        <div class="flex flex-col lg:flex-row text-rosePine-text p-24 gap-4">
-
-          <div className="rounded-xl bg-rosePine-surface p-8 w-full">
+        <div class="flex flex-col gap-4 p-0 text-rosePine-text lg:flex-row lg:p-24">
+          <div className="w-full rounded-xl bg-rosePine-surface p-8">
             <h3 className="mb-4 text-base text-rosePine-iris">Writing</h3>
             <div className="mb-4 flex-col space-y-1">
               <a
@@ -29,7 +31,8 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Listening to Pavement with a migraine: or, “Let go or be dragged.”
+                Listening to Pavement with a migraine: or, “Let go or be
+                dragged.”
               </a>
               <h4 className="text-sm text-[#6e6a86]">Medium - Oct. 2023</h4>
             </div>
@@ -56,12 +59,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-xl bg-rosePine-surface p-8 w-full">
+          <div className="w-full rounded-xl bg-rosePine-surface p-8">
             <h3 className="mb-4 text-base text-rosePine-iris">Music</h3>
             <p>
               I release ambient/electronic music under the name Glitch
-              Ensemble&mdash;an effort to make music that isn't guitar-based, and
-              that's more rooted in loops, drones, and atmosphere.
+              Ensemble&mdash;an effort to make music that isn't guitar-based,
+              and that's more rooted in loops, drones, and atmosphere.
             </p>
 
             <div className="flex w-full flex-row items-center gap-6 py-4">
@@ -110,7 +113,6 @@ export default function Home() {
           </div>
         </div>
       </Container>
-
     </main>
   );
 }

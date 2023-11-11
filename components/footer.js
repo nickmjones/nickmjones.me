@@ -1,13 +1,22 @@
-const Footer = ({ children }) => {
-  return(
-    <footer className="px-8 py-8 md:py-16 md:px-24 text-sm text-slate-500 bg-[#191724] text-center">
-      <ul>
-        <li>Copyright &copy; 2023 Nick M. Jones</li>
-        <li class="text-xs">All rights reserved</li>
-        <li class="text-xs">Made with <span class="text-rosePine-love">&#9829;</span> and also Javascript.</li>
-      </ul>
-    </footer>
-  )
-}
+import Container from "@/components/container";
 
-export default Footer
+const Footer = ({ children }) => {
+  return (
+    <footer className="flex flex-row justify-center bg-rosePine-surface">
+      <div class="md:py24 flex w-full flex-col items-center justify-between px-8 py-8 text-rosePine-muted md:flex-row md:px-24 lg:max-w-6xl">
+        <ul class="w-full">
+          <li>Copyright &copy; 2023 Nick M. Jones</li>
+        </ul>
+
+        <ul class="flex w-full flex-row justify-end gap-4">
+          <li>Threads</li>
+          <li>Dribbble</li>
+          <li>Figma</li>
+          <li>Medium</li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

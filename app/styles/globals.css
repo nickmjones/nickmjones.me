@@ -18,6 +18,7 @@
 
 body {
   font-family: 'Pier Sans', Helvetica, Arial, sans-serif;
+  text-align: left;
 }
 
 body * {
@@ -100,6 +101,10 @@ strong, bold, em {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.portrait {
+  background: url("../../assets/oldme.png") bottom right no-repeat;
 }
 
 
