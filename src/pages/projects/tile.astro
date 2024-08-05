@@ -1,0 +1,102 @@
+---
+import CoreLayout from "../../layouts/CoreLayout.astro"
+import Image from "astro/components/Image.astro"
+import Top from "../../components/Top.astro"
+
+// Images
+import tile_001 from "../../images/tile_001.webp"
+import tile_002 from "../../images/tile_002.webp"
+import tile_003 from "../../images/tile_003.webp"
+import tile_004 from "../../images/tile_004.webp"
+import tile_005 from "../../images/tile_005.webp"
+import tile_006 from "../../images/tile_006.webp"
+import tile_007 from "../../images/tile_007.webp"
+import tile_008 from "../../images/tile_008.webp"
+import tile_009 from "../../images/tile_009.webp"
+---
+
+<CoreLayout>
+  <article>
+    <div class="py-4">
+      <h1 class="text-3xl font-bold">Tile redesign 2023</h1>
+      <h2 class="text-xl">Homepage and ecommerce store redesign & design kit</h2>
+    </div>
+    
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_001} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+
+    <div class="my-20 flex flex-row justify-center items-center">
+      <h5 class="text-2xl max-w-[50vw]">Tile is a handy technology that helps you find your misplaced items. It's a small Bluetooth device that you attach to things like keys or wallets. By using a mobile app, you can ping your Tile and follow the signals to locate your lost item. In summer of 2023, I lead design on a project to refactor the entire Tile.com user experience, from the homepage to the complete store experience.</h5>
+    </div>
+    
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_002} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Start</h3>
+      <p>Tile.com had maintained its unchanged design for several years. Following Tile's acquisition, a decision was made to align its brand more closely with that of Life360, creating a family resemblance. This redesign aimed not only to realign the brand but also to address longstanding user experience issues and introduce best practices into the shopping experience.</p>
+    </div>
+    
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_003} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <p>The team comprised stakeholders from marketing and merchandising who participated in a series of workshops. The objective was to define the foundational experience for the new website, including its visual aesthetics, touchpoints, and business requirements. Ultimately, the team identified goals for the site, and I took the lead in aligning these goals with potential design solutions.</p>
+    </div>
+
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_004} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Signature Experiences</h3>
+      <p>Throughout this project, my focus was on strengthening collaboration with Tile's front-end team. I dedicated time with my partners to develop prototypes for a distinctive "How It Works" experience on the homepage. Unfortunately, due to time constraints, we had to set aside the concept for a future iteration. However, this diversion proved valuable as it provided an opportunity for me to introduce code-based design using React and Tailwind into the Tile design process.</p>
+    </div>
+
+    <div class="mt-12 rounded-xl overflow-hidden">
+      <Image src={tile_005} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+    <div class="my-2 rounded-xl overflow-hidden">
+      <Image src={tile_006} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+    <div class="mb-12 rounded-xl overflow-hidden">
+      <Image src={tile_007} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+    
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Modularity is key</h3>
+      <p>With the philosophy of mapping business goals to page level elements in mind, it only made sense that those elements should be thought of as self-contained modules. This simplifies and engineering process, but also allowed us to think of each element as a discrete piece of design.</p>
+
+      <p>This approach was not only convenient, but in places like the product catalog it was necessary. Catalog pages dy definition need to flex and shift to accomodate various amounts of content. Designs also need to work on a wide variety of devices, supporting the buying behaviors of customers and meeting them where they are.</p>
+    </div>
+
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_008} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+    
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Mind the details</h3>
+      <p>Even though e-commerce design might seem like a solved problem, I like to keep things interesting. I took a moment to rethink interactions, like how you apply and handle filters, aiming to make them smooth without throwing in too much new stuff. I paid extra attention to making sure it works seamlessly on mobile, where scroll actions and tray UI can get a bit tricky.</p>
+    </div>
+
+    <div class="my-12 rounded-xl overflow-hidden">
+      <Image src={tile_009} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    </div>
+
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Styleguide</h3>
+      <p>As I was designing and composing at the page level, I was using the review and testing process to also create a styleguide and design kit for future work. I find this is often the best way to document design decisions; this outlines how elements should be used and where, and gives some of the rationale behind each choice.</p>
+    </div>
+
+    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+      <h3 class="font-bold">Completion</h3>
+      <p>In each phase of this redesign project—homepage, product description page, product listing pages—the new designs were A/B tested against the previous designs. In every case, the hard work paid off and the new designs were clear and definitive winners. Over the course of the fall and winter of 2023 they have been rolled out to one hundred percent of web traffic to tile.com, where they have increased traffic and average order volume—in some cases by as much as 21%.</p>
+    </div>
+
+  </article>
+
+  <Top/>
+</CoreLayout>

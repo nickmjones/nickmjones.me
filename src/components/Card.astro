@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props
+const { subtitle } = Astro.props
+const { imgsrc } = Astro.props
+---
+
+<div class="overflow-hidden bg-slate-100 max-h-[320px]">
+  <div class="py-2">
+    <h4 class="text-sm font-bold">{ title }</h4>
+    <h4 class="font-normal text-sm">{ subtitle }</h4>
+  </div>
+  <div class="w-full bg-white aspect-square">
+    <img src={ imgsrc } alt="image" class="h-[100%] w-[100%] object-cover" />
+  </div>
+</div>
