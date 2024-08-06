@@ -1,7 +1,6 @@
 ---
-const { title } = Astro.props
-const { subtitle } = Astro.props
-const { imgsrc } = Astro.props
+import Image from "astro/components/Image.astro"
+const { title, subtitle, imgsrc } = Astro.props
 ---
 
 <div class="overflow-hidden bg-slate-100 max-h-[320px]">
@@ -10,6 +9,6 @@ const { imgsrc } = Astro.props
     <h4 class="font-normal text-sm">{ subtitle }</h4>
   </div>
   <div class="w-full bg-white aspect-square">
-    <img src={ imgsrc } alt="image" class="h-[100%] w-[100%] object-cover" />
+    <Image src={imgsrc} alt="image" class="h-[100%] w-[100%] object-cover" />
   </div>
 </div>
