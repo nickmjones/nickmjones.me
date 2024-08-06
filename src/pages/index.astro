@@ -5,16 +5,21 @@ import Card from "../components/Card.astro"
 
 <CoreLayout>
 	<div class="md:max-w-3xl flex flex-col md:flex-row py-4">
-		<div>
-			<h1 class="text-5xl">
+		<div class="md:py-20">
+			<h1 class="text-7xl">
 				Hi, I'm Nick Jones. I'm a multidisciplinary product designer based in NYC</h1>
 		</div>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
-		<Card title="Tile.com" subtitle="2023 Redesign" imgsrc="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+	<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+		<a href="/projects/tile">
+			<Card title="Tile.com" subtitle="2023 Redesign" imgsrc="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+		</a>
+
 		<Card title="Workpath.co" subtitle="2019 Redesign" imgsrc="https://images.unsplash.com/photo-1476365518243-f738bf58443d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
 		<Card title="Event Farm" subtitle="Design System" imgsrc="https://images.unsplash.com/3/doctype-hi-res.jpg?q=80&w=2965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
 		<Card title="Illustration" subtitle="Figma Vector Work" imgsrc="https://images.unsplash.com/photo-1501159599894-155982264a55?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 	</div>
 </CoreLayout>
