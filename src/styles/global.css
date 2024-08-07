@@ -7,3 +7,32 @@
     @apply mb-2;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Ensure content is still scrollable */
+html, body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS devices */
+}
+
+.fadeup {
+  animation: fadeup .60s ease-in-out;
+}
+
+@keyframes fadeup {
+  from {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

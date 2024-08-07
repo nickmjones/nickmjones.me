@@ -1,30 +1,25 @@
 ---
 import CoreLayout from "../layouts/CoreLayout.astro"
-import Card from "../components/Card.astro"
+import Image from "astro/components/Image.astro"
 import tile_001 from "../images/tile_001.webp"
-import tile_002 from "../images/tile_002.webp"
-import tile_003 from "../images/tile_003.webp"
-import tile_004 from "../images/tile_004.webp"
+import wp_001 from "../images/wp_001.webp"
+import personal_001 from "../images/personal_001.png"
 ---
 
 <CoreLayout>
-	<div class="md:max-w-3xl flex flex-col md:flex-row py-4">
-		<div class="md:py-20">
-			<h1 class="text-5xl md:text-7xl">
-				Hi, I'm Nick Jones. I'm a multidisciplinary product designer based in NYC</h1>
-		</div>
+
+	<div class="h-[75vh] flex flex-col justify-center p-20 mt-16">
+		<h1 class="text-6xl md:w-2/3 leading-tight">
+			Hi, I'm Nick Jones. I'm a multidisciplinary product designer based in NYC
+		</h1>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-		<a href="/projects/tile">
-			<Card title="Tile.com" subtitle="2023 Redesign" imgsrc={tile_001} />
-		</a>
-
-		<Card title="Workpath.co" subtitle="2019 Redesign" imgsrc={tile_002} />
-
-		<Card title="Event Farm" subtitle="Design System" imgsrc={tile_003} />
-
-		<Card title="Illustration" subtitle="Figma Vector Work" imgsrc={tile_004} />
+	<div class="overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-2">
+		<Image src={tile_001} alt="tile" class="w-[100%] object-cover rounded-md col-span-2" />
+		<Image src={wp_001} alt="tile" class="h-[100%] object-cover rounded-md col-span-1" />
+		<Image src={personal_001} alt="tile" class="h-[100%] object-cover rounded-md col-span-1" />
 	</div>
+
+
 </CoreLayout>
 

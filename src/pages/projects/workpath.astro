@@ -2,6 +2,7 @@
 import CoreLayout from "../../layouts/CoreLayout.astro"
 import Image from "astro/components/Image.astro"
 import Top from "../../components/Top.astro"
+import Button from "../../components/Button.astro"
 
 // Images
 import wp_001 from "../../images/wp_001.webp"
@@ -13,21 +14,17 @@ import wp_005 from "../../images/wp_005.webp"
 
 <CoreLayout>
   <article>
-    <div class="md:max-w-3xl flex flex-col md:flex-row py-4">
-      <div class="md:py-20">
+    <div class="flex flex-col md:flex-row py-4 justify-center items-center">
+      <div class="md:py-20 w-[100vw] md:w-[60vw]">
         <p class="text-xl">Projects/Workpath.co</p>
-        <h2 class="text-5xl md:text-7xl">
-          Workpath.co site redesign & development
+        <h2 class="text-5xl leading-tight">
+          Workpath is a workforce management SaaS for the home healthcare sector. I redesigned and redeveloped the site, created marketing materials, established new brand guidelines, and developed a design kit for future use. I also played a key role in improving the user experience within the Workpath app.
         </h2>
       </div>
     </div>
     
     <div class="my-12 rounded-xl overflow-hidden">
       <Image src={wp_001} alt="tile redesign screenshot" class="w-[100%] object-cover" />
-    </div>
-
-    <div class="my-20 flex flex-row justify-center items-center">
-      <h5 class="text-2xl max-w-[50vw]">Workpath was built as a workforce management SaaS focused on the home healthcare space. The platform allowed teams of healthcare providers—such as phlebotomists or home health aides—to co-ordinate scheduling, receive orders and notifications, store and submit test results and more. <br/>During my time at Workpath, my responsibility was to enhance the brand and overhaul the marketing website. Throughout this engagement, I not only redesigned and redeveloped the website but also generated a comprehensive set of marketing materials, established new brand guidelines, and created a design kit to support future design endeavors. Additionally, I assumed the primary role in improving the user experience inside the Workpath app itself.</h5>
     </div>
 
     <div class="my-12 rounded-xl overflow-hidden">
@@ -51,10 +48,14 @@ import wp_005 from "../../images/wp_005.webp"
       <Image src={wp_004} alt="tile redesign screenshot" class="w-[100%] object-cover" />
     </div>
 
-    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+    <div class="mt-20 flex flex-col justify-center md:px-[20vw] text-xl">
       <h3 class="font-bold">Final</h3>
       <p>I crafted both the homepage and the "Platform" page to complement each other, establishing the brand and guiding the reader through a typical workday in the Workpath app. The revitalized brand and marketing efforts led to Workpath's acquisition by Ro, underscoring the impact that rebranding and replatforming can have on a conceptually strong business in need of a bit more visibility.</p>
-      <p class="font-bold text-blue-600 underline">Visit a <a href="https://workpath-co.vercel.app/">live archived version of Workpath.co</a></p>
+
+    </div>
+
+    <div class="my-4 md:px-[20vw]">
+      <Button title="See the site" link="https://workpath-co.vercel.app/" />
     </div>
 
     <div class="my-12 rounded-xl overflow-hidden">
