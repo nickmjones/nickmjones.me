@@ -4,7 +4,7 @@ import Image from "astro/components/Image.astro"
 import Top from "../../components/Top.astro"
 
 // Images
-import tile_001 from "../../images/tile_001.webp"
+import tile_000 from "../../images/tile_000.png"
 import tile_002 from "../../images/tile_002.webp"
 import tile_003 from "../../images/tile_003.webp"
 import tile_004 from "../../images/tile_004.webp"
@@ -17,24 +17,30 @@ import tile_009 from "../../images/tile_009.webp"
 
 <CoreLayout>
   <article>
-    <div class="flex flex-col md:flex-row py-4 justify-center items-center">
-      <div class="md:py-20 w-[100vw] md:w-[60vw]">
-        <p class="text-xl">Projects/Tile.com</p>
-        <h2 class="text-5xl leading-tight">
-          Tiles are devices that help you locate misplaced items like keys or wallets. Using the app, you can ping your Tile and follow the signals to find your lost item. In the summer of 2023, I led a project to redesign the entire Tile.com user experience, including the homepage and the store experience.
-        </h2>
+
+    <div class="py-8 flex flex-col md:flex-row gap-8">
+      <div class="w-full md:w-1/3">
+        <h3 class="text-3xl text-gray-600">
+          In the summer of 2023, I led a project to redesign the entire Tile.com user experience, including the homepage and the store experience.
+        </h3>
+      </div>
+      <div class="w-full md:w-1/3">
+        <p class="text-sm uppercase m-0 text-gray-400">Project</p>
+        <p>Tile.com redesign</p>
+        <p class="text-sm uppercase m-0 text-gray-400">Role</p>
+        <p>Senior Product Designer</p>
       </div>
     </div>
     
     <div class="my-2 overflow-hidden rounded-md">
-      <Image src={tile_001} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+      <Image src={tile_000} alt="tile redesign screenshot" class="w-[100%] object-cover" />
     </div>
     
     <div class="my-2 overflow-hidden rounded-md">
       <Image src={tile_002} alt="tile redesign screenshot" class="w-[100%] object-cover" />
     </div>
 
-    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+    <div class="my-20 flex flex-col md:px-[20vw] text-xl">
       <h3 class="font-bold">Start</h3>
       <p>Tile.com had maintained its unchanged design for several years. Following Tile's acquisition, a decision was made to align its brand more closely with that of Life360, creating a family resemblance. This redesign aimed not only to realign the brand but also to address longstanding user experience issues and introduce best practices into the shopping experience.</p>
     </div>
