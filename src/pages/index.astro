@@ -8,19 +8,19 @@ import personal_001 from "../images/personal_001.png"
 
 <CoreLayout>
 
-	<div class="h-[75vh] flex flex-col justify-center p-8 md:p-20 mt-16">
-		<h1 class="text-5xl md:w-2/3 leading-tight font-bold text-gray-600">
+	<div class="h-[85vh] flex flex-col justify-center p-8 md:p-20 mt-16">
+		<h1 class="text-5xl md:text-6xl md:w-2/3 text-gray-600">
 			Hi, I'm Nick Jones. I'm a multidisciplinary product designer based in NYC.
 		</h1>
 	</div>
 
-	<div class="overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-2">
+	<div class="overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-2">
 
-		<Card title="Tile.com" imgsrc={tile_000} link="/projects/tile" description="In the summer of 2023, I led a project to redesign the entire Tile.com user experience, including the homepage and the store experience." className="md:col-span-2" />
+		<Card title="Tile.com" imgsrc={tile_000} link="/projects/tile" description="Redesigning the Tile.com UX, including the homepage and ecommerce pages" className="md:col-span-1" />
 
-		<Card title="Workpath" imgsrc={wp_000} link="projects/workpath" description="I redesigned and redeveloped Workpath.co and developed a design kit for future use." className="md:col-span-1" />
+		<Card title="Workpath" imgsrc={wp_000} link="projects/workpath" description="Web redesign & replatforming, design kit & in-app user experience" className="md:col-span-1" />
 
-		<Card title="Personal Projects" imgsrc={personal_001} description="Experiments and illustrations in Figma" className="md:col-span-1" />
+		<Card title="Personal Projects" imgsrc={personal_001} description="Component-based vector product keyshots with Figma" className="md:col-span-1" />
 	</div>
 
 
