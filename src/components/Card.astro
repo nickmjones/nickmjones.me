@@ -1,14 +1,42 @@
 ---
+const { title, description, imgsrc, className = '' } = Astro.props
 import Image from "astro/components/Image.astro"
-const { title, subtitle, imgsrc } = Astro.props
 ---
 
-<div class="overflow-hidden max-h-[320px]">
-  <div class="py-2">
-    <h4 class="text-sm font-bold">{ title }</h4>
-    <h4 class="font-normal text-sm">{ subtitle }</h4>
-  </div>
-  <div class="w-full bg-white aspect-square">
-    <Image src={imgsrc} alt="image" class="h-[100%] w-[100%] object-cover" />
+<style>
+  .card {
+    background-color: white;
+    display: flex;
+    position: relative;
+    min-height: 8rem;
+  }
+  .card_content {
+    padding: 8rem;
+    opacity: 0;
+    transition: all .20s ease-in-out;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+
+  }
+  .card:hover > .card_content {
+    opacity: 1;
+  }
+</style>
+
+<div class={`card rounded-md overflow-hidden ${className}`}>
+  <Image src={imgsrc} alt={description} />
+  <div class="card_content">
+    <h1 class="font-bold">{title}</h1>
+    <p class="md:text-3xl">{description}</p>
   </div>
 </div>
