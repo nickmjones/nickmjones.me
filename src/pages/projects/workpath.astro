@@ -3,13 +3,6 @@ import CoreLayout from "../../layouts/CoreLayout.astro"
 import Image from "astro/components/Image.astro"
 import Top from "../../components/Top.astro"
 import Button from "../../components/Button.astro"
-
-// Images
-import wp_001 from "../../images/wp_001.webp"
-import wp_002 from "../../images/wp_002.webp"
-import wp_003 from "../../images/wp_003.webp"
-import wp_004 from "../../images/wp_004.webp"
-import wp_005 from "../../images/wp_005.webp"
 ---
 
 <CoreLayout>
@@ -17,57 +10,48 @@ import wp_005 from "../../images/wp_005.webp"
 
     <div class="py-8 flex flex-col md:flex-row gap-8">
       <div class="w-full md:w-1/3">
-        <h3 class="text-3xl text-gray-600">
+        <h3 class="text-gray-400 mb-4">Project/Workpath.co</h3>
+        <h1 class="text-3xl text-gray-600">
           I redesigned and redeveloped Workpath's marketing site, designed marketing and sales materials, established new brand guidelines, and developed a design kit for future use.
-        </h3>
-      </div>
-      <div class="w-full md:w-1/3">
-        <p class="text-sm uppercase m-0 text-gray-400">Role</p>
-        <p>Design & UX leadership, web developer</p>
-        <p class="text-sm uppercase m-0 text-gray-400">Project</p>
-        <p>Workpath.co</p>
+        </h1>
       </div>
     </div>
     
-    <div class="my-12 rounded-xl overflow-hidden">
-      <Image src={wp_001} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
     </div>
 
-    <div class="my-12 rounded-xl overflow-hidden">
-      <Image src={wp_002} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 my-2">
+      <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
+      </div>
+      <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
+      </div>
     </div>
 
-    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
-      <h3 class="font-bold">Design Spike</h3>
+    <div class="my-20 flex flex-col justify-center md:px-[20vw]">
+      <p class="font-bold">Design Spike</p>
       <p>Some of my first meetings with Workpath were about where they were and where they wanted to be. It was important for them that people know that the platform was easy to use, but was also a secure place for customer data. That was a sharp contrast from the spreadsheets and text messages that many home health teams relied on. I wanted to put a prospect at the center of a working day from morning to evening, using Workpath all along the way to get their work done. I committed to delivering some wires, mostly as a way to organize the story on the page.</p>
     </div>
 
-    <div class="my-12 rounded-xl overflow-hidden">
-      <Image src={wp_003} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
     </div>
 
-    <div class="my-20 flex flex-col justify-center md:px-[20vw] text-xl">
+    <div class="my-20 flex flex-col justify-center md:px-[20vw]">
       <p>To kick off a major redesign at Workpath, I took a hands-on approach—designing in code and crafting an extensive high-fidelity moodboard. Using insights from the team and an understanding of the current site's strengths and weaknesses, I revisited every design element, from "perfect world" homepages to marketing components. Simultaneously, I revamped the Workpath brand, selecting new typefaces and colors that better represented its evolving identity. This effort culminated in "Housecall," a design kit guiding subsequent visual design work.</p>
     </div>
 
-    <div class="my-12 rounded-xl overflow-hidden">
-      <Image src={wp_004} alt="tile redesign screenshot" class="w-[100%] object-cover" />
+    <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
     </div>
 
-    <div class="mt-20 flex flex-col justify-center md:px-[20vw] text-xl">
-      <h3 class="font-bold">Final</h3>
+    <div class="my-20 flex flex-col justify-center md:px-[20vw]">
       <p>I crafted both the homepage and the "Platform" page to complement each other, establishing the brand and guiding the reader through a typical workday in the Workpath app. The revitalized brand and marketing efforts led to Workpath's acquisition by Ro, underscoring the impact that rebranding and replatforming can have on a conceptually strong business in need of a bit more visibility.</p>
-
     </div>
 
-    <div class="my-4 md:px-[20vw]">
-      <Button title="See the site" link="https://workpath-co.vercel.app/" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 my-2">
+      <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
+      </div>
+      <div class="overflow-hidden rounded-md h-auto md:h-[80vh] bg-gray-300">
+      </div>
     </div>
-
-    <div class="my-12 rounded-xl overflow-hidden">
-      <Image src={wp_005} alt="tile redesign screenshot" class="w-[100%] object-cover" />
-    </div>
-
 
   </article>
 

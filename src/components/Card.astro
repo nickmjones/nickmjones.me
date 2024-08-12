@@ -1,14 +1,17 @@
 ---
-const { title, description, imgsrc, link, className = '' } = Astro.props
+const { title, description, imgsrc, linkname, link } = Astro.props
 import Image from "astro/components/Image.astro"
-import Button from "./Button.astro"
 ---
 
-<div class="overflow-hidden">
-  <Image src={imgsrc} alt={description} class="rounded-md"/>
+<div class="overflow-hidden relative">
+  <div class="relative">
+    <Image src={imgsrc} alt={description} class="rounded-md z-40"/>
+    <a href={link} class="backdrop-blur-lg bg-white/50 inline-flex justify-center items-center rounded-full absolute bottom-4 right-4 z-50 px-5 py-2 text-sm">
+      {linkname}
+    </a>
+  </div>
   <div class="py-8">
-      <p class="font-bold">{title}</p>
-      <h1 class="md:text-2xl mb-8">{description}</h1>
-      <Button title={title} link={link} />
-    </div>
+    <p class="font-bold">{title}</p>
+    <h3 class="md:text-2xl mb-8">{description}</h3>
+  </div>
 </div>
