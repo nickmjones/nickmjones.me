@@ -1,29 +1,58 @@
 ---
 import CoreLayout from "../layouts/CoreLayout.astro"
-import Card from "../components/Card.astro"
+import Image from "astro/components/Image.astro"
 import tile_000 from "../images/tile_000.png"
+import rivian_000 from "../images/rivian_000.png"
 import wp_000 from "../images/wp_000.png"
-import personal_001 from "../images/personal_001.png"
+import design_000 from "../images/design_000.png"
 ---
 
 <CoreLayout>
 
-	<div class="py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-		<h1 class="text-4xl text-gray-600">
-			Hi, I'm Nick Jones. I'm a multidisciplinary product designer based in NYC.
+	<div class="py-24 flex flex-col justify-center items-center md:h-screen">
+		<h1 class="text-2xl md:text-4xl text-gray-600 p-20 md:p-44">
+			Hi, I'm Nick Jones—a multidisciplinary product designer based in NYC. I'm a veteran product, UX, and graphic designer with more than 20 years of experience in startups, agencies, and almost everything in between. I believe in craft, experimentation, and I still fight for the users.
 		</h1>
-		<p>
-			I'm a veteran product, UX, and graphic designer with more than 20 years of experience in startups, agencies, and almost everything in between. I believe in craft, experimentation, and I still fight for the users.
-		</p>
 	</div>
 
-	<div class="overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+	<div class="grid grid-cols-1 grid-rows-12 md:grid-cols-2 gap-2 md:min-h-[140vh] min-h-[70vh]">
 
-		<Card title="Tile.com" imgsrc={tile_000} link="/projects/tile" description="Redesigning the Tile.com UX, including the homepage and ecommerce pages" linkname="Tile redesign →" />
+		<div class="bg-gray-200 rounded-md md:col-span-2 md:row-span-6 row-span-3 p-8 relative overflow-hidden">
+			<dl class="text-white z-40 relative">
+				<dt class="text-base">Tile.com Redesign 2023</dt>
+				<dd class="text-xs text-white/60">UX research and design</dd>
+			</dl>
+			<div class="h-full w-full absolute top-0 left-0 z-30 bg-gradient-to-br from-gray-900 to-transparent" />
+			<Image src={tile_000} alt="Tile mobile screenshot" class="absolute top-0 left-0 w-full h-full object-cover" />
+		</div>
 
-		<Card title="Workpath" imgsrc={wp_000} link="projects/workpath" description="Web redesign & replatforming, design kit & in-app user experience" className="md:col-span-1" linkname="Workpath design →" />
+		<div class="bg-gray-200 rounded-md md:col-span-1 md:row-span-3 row-span-3 p-8 relative overflow-hidden">
+			<dl class="text-white z-40 relative">
+				<dt class="text-base">Rivian <span class="rounded-full text-center px-2 py-1 text-[11px] bg-yellow-500">Spec</span></dt>
+				<dd class="text-xs text-white/60">Redesign of the Rivian app UX</dd>
+			</dl>
+			<div class="h-full w-full absolute top-0 left-0 z-30 bg-gradient-to-br from-gray-900 to-transparent" />
+			<Image src={rivian_000} alt="Tile mobile screenshot" class="absolute top-0 left-0 w-full h-full object-cover" />
+		</div>
 
-		<Card title="Personal Projects" imgsrc={personal_001} description="Component-based vector product keyshots with Figma" className="md:col-span-1" linkname="Illustrations →" />
+		<div class="bg-gray-200 rounded-md md:col-span-1 md:row-span-6 row-span-3 p-8 relative overflow-hidden">
+			<dl class="text-white z-40 relative">
+				<dt class="text-base">Workpath</dt>
+				<dd class="text-xs text-white/60">UX & product design, development</dd>
+			</dl>
+			<div class="h-full w-full absolute top-0 left-0 z-30 bg-gradient-to-br from-gray-900 to-transparent" />
+			<Image src={wp_000} alt="Tile mobile screenshot" class="absolute top-0 left-0 w-full h-full object-cover" />
+		</div>
+
+		<div class="bg-gray-200 rounded-md md:col-span-1 md:row-span-3 row-span-3 p-8 relative overflow-hidden">
+			<dl class="text-white z-40 relative">
+				<dt class="text-base">Illustration & Design</dt>
+				<dd class="text-xs text-white/60">Other projects and experiments</dd>
+			</dl>
+			<div class="h-full w-full absolute top-0 left-0 z-30 bg-gradient-to-br from-gray-900 to-transparent" />
+			<Image src={design_000} alt="Tile mobile screenshot" class="absolute top-0 left-0 w-full h-full object-cover" />
+		</div>
+		
 	</div>
 
 
